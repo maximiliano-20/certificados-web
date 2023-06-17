@@ -1,3 +1,7 @@
+:root{
+   --colorPrimario:#444;
+}
+
 *{
     box-sizing: border-box;
     text-decoration: none;
@@ -23,21 +27,21 @@ img{
 }
 
 .titulo{
-    color: #444;
+    color: var(--colorPrimario);
     text-align: center;
     font-size: 2rem;
 }
 
 
-.certificados-seccion{
+.layout{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     align-items: center;
     gap: 20px;
 }
 
-.cerificados-columnas{
-    height: 300px;
+.certificados{
+    height:100%;
     padding: 3rem 2rem;
     outline: .2rem solid #ddd;
     outline-offset: -1.1rem;
@@ -56,7 +60,7 @@ img{
 }
 
 .certificados__img{
-    height: 150px;
+    height: 65%;
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
@@ -68,9 +72,21 @@ img{
 }
 
 .certificados__titulo{
-    color:#444;
+    color: var(--colorPrimario);
     font-size: 1rem;
 }
 
+.certificados__curso{
+    width: 82%;
+    padding: 3px 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    display: block;
+    background-color: #ccc;
+    color: var(--colorPrimario);
+    font-size:1rem;
+    font-weight: 700;
+}
 
 
